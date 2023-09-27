@@ -41,12 +41,11 @@
 
             calcular()
         }
-        function calcular() {
 
+        function calcular() {
             purchase = parseInt(purchase)
             sale = parseInt(sale)
             amount = parseInt(amount)
-
             somar = amount + purchase;
             if (somar < sale) {
                 alert('Saldo insuficiente')
@@ -59,6 +58,7 @@
         }
 
         function Sair() {
+
             purchase = ""
             sale = ""
             amount = ""
@@ -66,12 +66,15 @@
             subtrair = ""
             somar = ""
             let text = "Deseja fazer outro cadastro? Se sim click ok senão click cancelar";
-            if (confirm(text) == true) {
+
+            if (confirm(text) === true) {
                 verificar()
-            } else {
-                Alert('Sistema encerrado')
+            }
+            else {
+                alert('Sistema encerrado')
             }
         }
+
     </script>
 
 </body>
