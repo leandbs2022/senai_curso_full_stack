@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação</title>
+</head>
+
+<body>
+    <input type="button" value="Inciar o cadastro" onclick="verificar()">
+
+    <script>
+        /*tipo de dados*/
+        var purchase = ""
+        var sale = ""
+        var amount = ""
+        var part = ""
+        var subtrair = ""
+        var somar = ""
+
+        function verificar() {
+            /*Inserir dados*/
+
+            while (part === "") part = prompt('digite o nome da peça')
+
+            do {
+                amount = prompt('digite a quantidade do estoque')
+                numero = parseFloat(amount);
+            } while (isNaN(numero))
+
+            do {
+                purchase = purchase = prompt('digite a quantidade que foi comprada')
+                numero = parseFloat(purchase);
+            } while (isNaN(numero))
+
+            do {
+                sale = purchase = prompt('digite a quantidade que foi vendida')
+                numero = parseFloat(sale);
+            } while (isNaN(numero))
+
+            calcular()
+        }
+        function calcular() {
+
+            purchase = parseInt(purchase)
+            sale = parseInt(sale)
+            amount = parseInt(amount)
+
+            somar = amount + purchase;
+            if (somar < sale) {
+                alert('Saldo insuficiente')
+            } else {
+                /*lê dados*/
+                subtrair = somar - sale;
+                alert("Peça:" + part + '\n' + "Quantidade:" + amount + '\n' + "Compra:" + purchase + '\n' + "Estoque:" + somar + '\n' + "Vendas:" + sale + '\n' + "Estoque Atual:" + subtrair)
+                Sair()
+            }
+        }
+
+        function Sair() {
+            purchase = ""
+            sale = ""
+            amount = ""
+            part = ""
+            subtrair = ""
+            somar = ""
+            let text = "Deseja fazer outro cadastro? Se sim click ok senão click cancelar";
+            if (confirm(text) == true) {
+                verificar()
+            } else {
+                Alert('Sistema encerrado')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
