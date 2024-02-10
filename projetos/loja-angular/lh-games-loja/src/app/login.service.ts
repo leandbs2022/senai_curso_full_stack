@@ -15,8 +15,10 @@ mostrarMenu = new Subject<boolean>()
     if(usuario == 'aluno' && senha == '1234'){
       localStorage.setItem('token', 'qwer1234');
       this.mostrarMenu.next(false)
+      alert('Acesso permitido')
     }else{
       this.mostrarMenu.next(true)
+      alert('Acesso negado')
     }
   }
 

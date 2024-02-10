@@ -2,13 +2,13 @@
   <section id="section-login">
     <form>
       <div>
-        <label for="usuario">Email</label>
-        <input name="usuario" required type="text" [(ngModel)]="usuario">
+        <label for="usuario"><span id="titulo-login">Acesso restrito</span></label><br>
+        <input class="largura-do-texto" name="usuario" required type="text" [(ngModel)]="usuario" placeholder="digite seu login">
         <br>
-        <label for="password">Password</label>
-        <input name="password" type="password" [(ngModel)]="senha">
-      </div>
-      <button (click)="fazerLogin()">Login</button>
+<br>
+        <input class="largura-do-texto" name="password" type="password" [(ngModel)]="senha" placeholder="digite sua senha">
+      </div><br>
+      <button id="btn-login" class="btn btn-primary" (click)="fazerLogin()">Login</button>
     </form>
   </section>
 </main>
