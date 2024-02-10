@@ -25,14 +25,23 @@ export class ProdutoService {
   cadastrarProduto(produto: Produto): Observable<Produto[]> {
     return this._httpClient.post<Produto[]>(this.url, produto)
   }
-  atualizaProduto(id: any, produto: Produto): Observable<Produto[]> {
-    const urlAtualizar = `${this.url}/?id=${id}`
+
+  atualizarProduto(id: any, produto: Produto): Observable<Produto[]> {
+    const urlAtualizar = `${this.url}/${id}`
     return this._httpClient.put<Produto[]>(urlAtualizar, produto)
   }
 
-  removerProduto(id: any, produto: Produto): Observable<Produto[]> {
-    const urlDeletar = `${this.url}/?id=${id}`
+  removerProduto(id: any): Observable<Produto[]> {
+    const urlDeletar = `${this.url}/${id}`
     return this._httpClient.delete<Produto[]>(urlDeletar)
+  }
+
+  alertaExcluir(){
+    return alert('Registo foi deletado!')
+  }
+
+  alertaErro(){
+    return alert('Error no processo, tarefa não finalizada!')
   }
 
 }

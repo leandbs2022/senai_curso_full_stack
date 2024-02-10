@@ -12,14 +12,21 @@
       "produto": "Jogo 2",
       "descricao": "Descrição do jogo 2",
       "foto": "jogo2.png",
-      "preco": 200
+      "preco": 100
     },
     {
       "id": 3,
       "produto": "Jogo 3",
-      "descricao": "Descrição do jogo 3",
-      "foto": "jogo3.png",
-      "preco": 400
+      "descricao": "Jogo 3 de ação",
+      "foto": "foto3.png",
+      "preco": 150
+    },
+    {
+      "id": 4,
+      "produto": "Jogo 4",
+      "descricao": "Jogo 4 de ação",
+      "foto": "foto3.png",
+      "preco": 50
     }
   ]
 }
