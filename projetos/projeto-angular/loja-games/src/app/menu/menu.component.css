@@ -15,3 +15,7 @@ span{
     text-decoration: none;
     color: white;
   }
+  .menu-azul /*menu padrão Azul*/{
+    background-color:black;
+    /* outros estilos conforme necessário */
+  }
