@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
+
   ngOnInit(): void {
     this.alertaMensagem();
   }
 
-  alertaMensagem(){
-alert("Função desabilita!")
+  alertaMensagem() {
+
+    alert("Função desabilita!")
   }
 }

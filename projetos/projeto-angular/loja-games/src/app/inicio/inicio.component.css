@@ -9,7 +9,9 @@ main {
 #section-banner img {
   height: 500px;
 }
-
+#section-body{
+  height: auto;
+}
 h2 {
   text-align: center;
   font-size: 40px;
@@ -109,13 +111,12 @@ mat-card-title {
   top: 68px;
   left: 160px;
 }
-
 @media screen and (max-width: 1205px) {
   #size-icon {
     opacity: 0;
   }
-
   mat-grid-list {
-    columns: auto;
+    column-width:row-height;
+    background-color: aqua;
   }
 }
