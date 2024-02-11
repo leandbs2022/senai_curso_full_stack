@@ -49,13 +49,26 @@ mat-card-actions{
     color: red;
     font-size: 30px;
   }
-
   mat-card img{
     height: 300px;
     width: 300px;
+
   }
-
-
+  .text-just{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+  }
+  mat-card-title{
+    font-family:sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+   
+  }
+  .card-image{
+    margin: 0 auto;
+    width: 500px;
+  }
 
 
 
